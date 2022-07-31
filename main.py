@@ -5,7 +5,7 @@ sr = dnn_superres.DnnSuperResImpl_create()
 # Read image
 video = cv2.VideoCapture("/Users/yongjer/Downloads/P1 Squences of real numbers & the axiom of completeness.mp4")
 # Read the desired model
-path = "/Users/yongjer/Downloads/EDSR_x2.pb"
+path = "./EDSR_x2.pb"
 sr.readModel(path)
 # Set the desired model and scale to get correct pre- and post-processing
 sr.setModel("edsr", 2)
